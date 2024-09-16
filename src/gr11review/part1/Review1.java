@@ -15,7 +15,7 @@ public class Review1{
         System.out.print("Enter the day number: ");
         intDay = Integer.parseInt(Keyboard.readLine());
         for(int i = intMonth; i > 0; i--){
-            total += months[i] ;
+            total += months[i-1] ;
             //System.out.println(total);
         }
         total += intDay;
