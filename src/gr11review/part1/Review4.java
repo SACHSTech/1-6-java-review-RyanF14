@@ -7,9 +7,9 @@ public class Review4{
         double Total;
         double Tax;
         double input;
-        DecimalFormat df = new DecimalFormat("##.##");
+        DecimalFormat df = new DecimalFormat("0.00");
         int loop;
-        System.out.print("How many items do you want to buy?: ");
+        System.out.print("How many items do you want to buy? ");
         BufferedReader keyboard = new BufferedReader(new InputStreamReader(System.in));
         loop = Integer.parseInt(keyboard.readLine());
         for(int i = 0; i < loop; i++){
