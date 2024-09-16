@@ -2,14 +2,14 @@ package gr11review.part1;
 import java.io.*;
 
 public class Review2{
-    public static void main(String[] args) throws NumberFormatException, IOException {
+    public static void main(String[] args) throws IOException {
         int joke;
         BufferedReader Keyboard = new BufferedReader(new InputStreamReader(System.in));
-        System.out.println("0 - print a joke about hair");
-        System.out.println("1 - print a joke about feet");
-        System.out.println("2 - Print a joke about clothes");
-        System.out.println("3 - print a joke about teachers");
-        System.out.print("Select: ");
+        System.out.println("0 - print a joke about your hair");
+        System.out.println("1 - print a joke about your feet");
+        System.out.println("2 - print a joke about your clothes");
+        System.out.println("3 - print a joke about your teacher");
+        System.out.print("Choose a menu option: ");
         joke = Integer.parseInt(Keyboard.readLine());
         switch (joke) {
             case 0:
@@ -24,6 +24,9 @@ public class Review2{
                 break;
             case 3:
                 System.out.println("what's the deal with teachers, am i right?");
+                break;
+            default:
+                System.out.println("Invalid menu option");
                 break;
 
         

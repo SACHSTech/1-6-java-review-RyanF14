@@ -4,10 +4,10 @@ import java.io.*;
 import java.util.ArrayList;
 
 public class Review1{
-    static int intMonth;
-    static int intDay;
-    static BufferedReader Keyboard = new BufferedReader(new InputStreamReader(System.in));
-    public static void main(String[] args) throws NumberFormatException, IOException{
+    public static void main(String[] args) throws IOException{
+        int intMonth;
+        int intDay;
+        BufferedReader Keyboard = new BufferedReader(new InputStreamReader(System.in));
         int[] months = {0, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
         int total = 0;
         System.out.print("Enter the month number: ");
