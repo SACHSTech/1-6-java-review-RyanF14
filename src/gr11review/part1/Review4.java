@@ -11,12 +11,15 @@ public class Review4{
         int loop;
         System.out.print("How many items do you want to buy? ");
         BufferedReader keyboard = new BufferedReader(new InputStreamReader(System.in));
+        //gain loop value
         loop = Integer.parseInt(keyboard.readLine());
+        //acquire input
         for(int i = 0; i < loop; i++){
             System.out.print("Enter the price for item " + (i + 1) + ": ");
             input = Double.parseDouble(keyboard.readLine());
             Subtotal += input;
         }
+        //print and calculate the subtotal, tax and total
         System.out.print("Subtotal: $");
         System.out.println(df.format(Subtotal));
         Tax = (Subtotal*0.13);
